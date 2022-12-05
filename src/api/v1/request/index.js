@@ -1,1 +1,1 @@
-export { findAll, addNewRequest } from './request';
+export { findAll, addNewRequest, updateRequest } from './request';

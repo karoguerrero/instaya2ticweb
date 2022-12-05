@@ -4,6 +4,7 @@ const headers = [
 	'Ciudad de Entrega',
 	'Dirección de Entrega',
 	'Estado',
+	'      ',
 ];
 
 export function RequestHeader() {

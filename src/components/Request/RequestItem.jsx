@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const colClasses = 'text-sm flex-1 text-center';
 
-export function RequestItem({ request, isEven = false }) {
+export function RequestItem({ request, isEven = false, eliminarTarea}) {
 	const { serviceNumber, due, toCity, toAddress, state } = request;
 
 	const formattedServiceNumber = `${serviceNumber}`.padStart(5, '0');
@@ -32,6 +32,9 @@ export function RequestItem({ request, isEven = false }) {
 				<Link className="text-indigo-600 cursor-pointer hover:underline">
 					{formattedServiceNumber}
 				</Link>
+				{/* <Link className="text-indigo-600 cursor-pointer hover:underline" to="/client/request/`{serviceNumber}`">
+					{formattedServiceNumber}
+				</Link> */}
 			</td>
 			<td
 				className={colClasses}
@@ -44,6 +47,14 @@ export function RequestItem({ request, isEven = false }) {
 				{formattedToAddress}
 			</td>
 			<td className={colClasses}>{formattedState}</td>
+			<td className={colClasses}>"Eliminar"`{serviceNumber}`
+				{/* <Button onClick=size="sm" variant="danger" type="submit">
+					Eliminar
+				</Button>
+				<Link className="text-indigo-600 cursor-pointer hover:underline">
+					{formattedServiceNumber}
+				</Link>"Eliminar"`{serviceNumber}` */}
+			</td>
 		</tr>
 	);
 }

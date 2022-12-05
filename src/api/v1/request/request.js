@@ -18,3 +18,12 @@ export const addNewRequest = (body) =>
 			.then((res) => resolve(res))
 			.catch((err) => reject(err));
 	});
+
+
+	export const updateRequest = (body) =>
+	new Promise((resolve, reject) => {
+		base
+			.post(`${controller}/`, body)
+			.then((res) => resolve(res))
+			.catch((err) => reject(err));
+	});

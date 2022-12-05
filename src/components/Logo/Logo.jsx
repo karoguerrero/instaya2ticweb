@@ -10,8 +10,9 @@ export function Logo({ spin = false }) {
 
 	return (
 		<Link to={to} className="flex mb-6 text-2xl font-semibold text-gray-900 ">
+			{/* <span className="h-8">Insta Ya!</span> */}
+			<img src="https://i.postimg.cc/8CwXqGvV/logop.png" width="200" height="150"></img>
 			<SvgIcon name="react" className={`w-8 h-8 mr-2 ${spinClass} `} />
-			<span className="h-8">Insta Ya!</span>
 		</Link>
 	);
 }

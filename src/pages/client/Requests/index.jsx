@@ -7,7 +7,20 @@ import { Logo } from '@/components/Logo';
 import { RequestTable } from '@/components/Request';
 import { Link, useLoaderData, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+// import { updateRequest as find1 } from '@/api/v1/request';
+// export async function RequestItem() {
+// 	try {
+// 		const response = await doFetch({
+// 			endpoint: find1,
+// 		});
 
+// 		return response.data.payload;
+// 	} catch (error) {
+// 		if (!error.toasted) {
+// 			throw error;
+// 		}
+// 	}
+// }
 export async function loader() {
 	try {
 		const response = await doFetch({
